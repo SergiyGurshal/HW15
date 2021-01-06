@@ -40,28 +40,33 @@ code {
 }
 
 .avatar {
+  display: flex;
   flex-grow: 1;
-  padding-left: 15px;
-  padding-top: 5px;
+  align-items: center;
+  padding: 5px 15px;
 }
 
 .userInfo {
+  display: flex;
   flex-grow: 15;
-  padding-top: 15px;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .datePanel {
   flex-grow: 1;
-  padding-top: 20px;
+  padding-top: 0.5rem;
+  font-size: 100%;
 }
 
 .namePanel {
-  font-size: 30px;
+  font-size: 190%;
   padding-bottom: 5px;
 }
 
 .nickNamePanel {
   color: lightgrey;
+  font-size: 100%;
 }
 
 .contentImg {
@@ -84,11 +89,36 @@ code {
 
 .contentDiscription {
   padding-bottom: 10px;
-  font-size: 20px;
+  font-size: 125%;
 }
 
 @media only screen and (max-width: 600px) {
   .post {
     max-width: 95%;
+  }
+
+  .avatarImg {
+    width: 50px;
+    height: 50px;
+  }
+
+  .avatar {
+    padding: 3px 10px;
+  }
+
+  .datePanel {
+    font-size: 70%;
+  }
+
+  .namePanel {
+    font-size: 100%;
+  }
+
+  .nickNamePanel {
+    font-size: 70%;
+  }
+
+  .contentDiscription {
+    font-size: 90%;
   }
 }

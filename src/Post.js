@@ -9,7 +9,7 @@ const Post = ({ name, photo, nickname, content, image, date }) => {
     <div className="post">
       <div className="infoPanel">
         <div className="avatar">
-          <img src={photo} alt="Avatar" width="100" height="100"></img>
+          <img src={photo} alt="Avatar" width="100" height="100" className="avatarImg"></img>
         </div>
         <div className="userInfo">
           <div className="namePanel">{name}</div>
