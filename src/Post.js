@@ -5,7 +5,6 @@ import commentIcon from './img/comment.png'
 import repostIcon from './img/share.png'
 
 const Post = ({ name, photo, nickname, content, image, date }) => {
-  console.log(photo)
   return (
     <div className="post">
       <div className="infoPanel">
@@ -24,9 +23,9 @@ const Post = ({ name, photo, nickname, content, image, date }) => {
           <img className="postImg" src={image} alt="ContentImg" />
         </div>
         <div className="likePanel">
-          <img src={likeIcon} width="30px" height="30px" />
-          <img src={commentIcon} width="30px" height="30px" />
-          <img src={repostIcon} width="30px" height="30px" />
+          <img src={likeIcon} width="30px" height="30px" alt="like icon" />
+          <img src={commentIcon} width="30px" height="30px" alt="comment icon" />
+          <img src={repostIcon} width="30px" height="30px" alt="repost icon" />
         </div>
       </div>
     </div>

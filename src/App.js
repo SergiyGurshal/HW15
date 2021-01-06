@@ -32,8 +32,8 @@ function App() {
 
   return (
     <div className="App">
-      {Posts.map((post) => (
-        <Post {...post} />
+      {Posts.map((post, id) => (
+        <Post {...post} key={id} />
       ))}
     </div>
   )
